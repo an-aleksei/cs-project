@@ -1,12 +1,57 @@
-body {
+
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  \/* styles.css */
+  body {
     padding: 25px;
     background-color: white;
     color: black;
     font-size: 25px;
   }
   
-  .dark-mode {
-    background-color: black;
-    color: white;
+  .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 18px;
+      z-index: 1000;
+      transition: top 0.3s ease;
+  }
+  
+  .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: top 0.3s ease;
+  }
+  
+  .navbar.hidden {
+      top: -50px; /* скрыть navbar */
+  }
+  
+  
+  .navbar ul li a {
+      color: rgb(8, 0, 0);
+      text-decoration: none;
+      font-size: 18px;
+  }
+  
+  main {
+      padding: 80px 20px;
+  }
+  
+  section {
+      margin-bottom: 50px;
+      padding: 50px;
+      border: 1px solid #ccc;
   }
   
