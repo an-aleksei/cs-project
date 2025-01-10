@@ -7,7 +7,6 @@
     background-color: #14213d;
     color: white;
   }
-  \/* styles.css */
   body {
     padding: 25px;
     background-color: white;
@@ -33,6 +32,10 @@
       border: none;
       outline:none;
       height:30px;
+  }
+
+  .popup.dark-mode {
+    color: white;
   }
   
   .navbar {
