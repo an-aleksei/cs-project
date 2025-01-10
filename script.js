@@ -6,10 +6,13 @@ function darkModeToggle() {    //adding toggle for dark mode (add some other col
 
     let popup1 = document.getElementById('popup');
     popup1.classList.toggle('dark-mode');
+
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('dark-mode');
   }
   // script.js
 const popup = document.getElementById('popup');
-const navbar = document.getElementById('navbar');
+
 
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
