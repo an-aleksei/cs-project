@@ -4,11 +4,14 @@ function darkModeToggle() {    //adding toggle for dark mode (add some other col
     let element = document.body;
     element.classList.toggle("dark-mode");
 
-    let popup1 = document.getElementById('popup');
-    popup1.classList.toggle('dark-mode');
-
-    const navbar = document.getElementById('navbar');
+    let navbar = document.getElementById('navbar');
     navbar.classList.toggle('dark-mode');
+
+    let links = document.querySelectorAll("#link, #link1"); 
+    links.forEach(function(link) {
+      link.classList.toggle('dark-mode');
+    });
+    
   }
   // script.js
 const popup = document.getElementById('popup');
