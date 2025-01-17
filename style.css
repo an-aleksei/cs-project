@@ -1,6 +1,7 @@
 
   /* colors: #14213d, #000000, #ffffff, #fca311, # e5e5e5 
    */
+
  
 
  .dark-mode {
@@ -17,7 +18,7 @@
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 40 px;
     color: #fca311;
     text-decoration: underline;
   }
@@ -71,13 +72,39 @@
       width: 100%;
       transition: top 0.4s ease;
       border-radius: 5px;
+      font-size: 20px;
   }
 
   .navbar a, .navbar .navbar-brand, .navbar .nav-link {
-    color: white; /* Default link and text color */
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
 }
 
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px; 
+  }
+  
+  .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+  }
 
+  .nav-link:hover,
+  .nav-link:focus {
+  color: #fca311; 
+  background-color: transparent;
+}
+
+#dropdownlinks {
+    background-color:#14213d;
+}
+
+#dropdownlinks.dark-mode {
+    background-color: white;
+}
 
   .navbar.dark-mode {
     background-color: white !important;
@@ -85,11 +112,11 @@
   }
 
   .navbar.dark-mode a, .navbar.dark-mode .navbar-brand, .navbar.dark-mode .nav-link {
-    color: #14213d ; /* Link and text color in dark mode */
+    color: #14213d ; 
    }
   
   .navbar.hidden {
-      top: -80px; /* hide nav */
+      top: -180px;
   }
   
   
@@ -142,9 +169,67 @@
     height: auto;
   }
 
+  .navbar-toggler, .navbar-toggler-icon {
+    color: white !important;
+}
+
+#navbaricon {
+    color: white !important
+}
+
+#toggledarkmode {
+    color: white;
+    cursor: pointer;
+  }
+
+#toggledarkmode.dark-mode {
+    color: #14213d;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+
+
+
+  
+
   @media (max-width: 768px) {
     body {
       font-size: 16px;
+    }
+
+    iframe {
+        height: 200px;
+      }
+    
+    h1 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size:15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .p1 {
+        font-size: 8px;
+    }
+
+    .p2 {
+        font-size: 8px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .popup {
+        width: auto;
     }
 }
 
