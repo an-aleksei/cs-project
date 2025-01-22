@@ -19,7 +19,6 @@ function darkModeToggle() {    //adding toggle for dark mode (add some other col
     });
     
   }
-  // script.js
 const popup = document.getElementById('popup');
 
 
